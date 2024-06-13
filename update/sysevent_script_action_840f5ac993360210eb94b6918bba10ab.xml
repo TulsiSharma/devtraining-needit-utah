@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_58872_needit.dueSoonNeedItTasks</event_name>
+        <name>Update Overdue NeedIt task priority soon</name>
+        <order>100</order>
+        <script><![CDATA[gs.info("event handler receive the needit event soon" + current.priority);
+
+current.priority = 3;
+
+current.update();
+gs.info("event handler receive the needit event soon" + current.priority);]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 11:33:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>840f5ac993360210eb94b6918bba10ab</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Update Overdue NeedIt task priority soon</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sysevent_script_action_840f5ac993360210eb94b6918bba10ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 12:29:43</sys_updated_on>
+    </sysevent_script_action>
+</record_update>
